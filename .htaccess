@@ -1,0 +1,25 @@
+ErrorDocument 404 /404.shtml
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+Redirect 301 /p1 http://brickcaster.com/singularity/p1
+Redirect 301 /p2 http://brickcaster.com/singularity/p2
+Redirect 301 /p3 http://brickcaster.com/singularity/p3
+Redirect 301 /1 http://brickcaster.com/singularity/1
+Redirect 301 /2 http://brickcaster.com/singularity/2
+Redirect 301 /3 http://brickcaster.com/singularity/3
+Redirect 301 /4 http://brickcaster.com/singularity/4
+
+</IfModule>
+
+# END WordPress
+
+
